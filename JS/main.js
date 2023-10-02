@@ -4,7 +4,7 @@
     let board;  
 
 /*----- cached element references -----*/
-
+    const squares = Array.from(document.querySelectorAll('#board div'));
 /*----- event listeners -----*/
 
 /*----- functions -----*/
@@ -12,13 +12,13 @@
 // Creates the Board
     function render() {
         board.forEach(function(mark, index){
-        console.log(mark, index);
+        squares[index].textContent = mark;
         });
     };
     function init() {
         board = [
         '', '', '',
-        '', 'Hello', '',
+        '', '', '',
         '', '', ''
         ];
         render();
