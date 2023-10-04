@@ -29,7 +29,9 @@
         board.forEach(function(mark, index){
         squares[index].textContent = mark;
         });
+        // Turn Message
         messages.textContent = `It's ${turn}'s turn!`;
+        // Win Ternary
         messages.textContent = win ? `${win} wins the game!` : `It's ${turn}'s turn!`;
     };
     // Initializing the board
