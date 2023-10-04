@@ -21,6 +21,8 @@
     const messages = document.querySelector('h2');
 /*----- event listeners -----*/
     document.getElementById('board').addEventListener('click', handleTurn);
+    // RESET BUTTON
+    document.getElementById('reset-button').addEventListener('click', init);
 
 /*----- functions -----*/
 
@@ -68,7 +70,6 @@
 /*----- MAIN-----*/
     
     init();
-    
 
     
  
